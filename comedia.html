@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_Acao.css">
+    <script src="scriptBat.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Locadora de Filmes</title>
+</head>
+<body>
+    <header> <!--Menu-->
+        <a href="#" class="logo"><img src="imgs/logo.png"></a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="acao.html">Ação</a></li>
+            <li><a href="comedia.html">Comédia</a></li>
+            <li><a href="#">Terror</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="pesquisar">
+            <input type="text" placeholder="Procurar">
+            <img src="imgs/lupa.png">
+        </div>
+    </header>
+
+    <h1>Comédia</h1>
+
+    <main class="container"><center>
+      <br><br>
+       
+      <h3>Lançamentos</h3> <!--Carrossel de Lançamentos-->
+
+        
+      <div class="filme-1"> <!--Filme do Batman-->
+            <video src="batman_trailer.mp4" controls="true" ></video>
+            <h1>Batman</h1>
+            <span> Batman segue o segundo ano de Bruce Wayne como o herói de Gotham, causando medo nos corações dos criminosos da sombria cidade.Durante uma de suas investigações, Bruce acaba envolvendo a si mesmo e Gordon em um jogo de gato e rato, ao investigar descobre uma onda de corrupção que envolve o nome de sua família.</span>
+            <img src="imgs/close.png" class="close"  onclick="Filme();">
+            <img src="imgs/logo.png" class="logom">
+     </div> 
+         
+         
+        <div id='carrossel'>
+                        <!--Botão Esquerdo do Carrossel-->
+            <button type='button' id='btnleft'><img src="imgs/btnesq.png"></button>
+    
+            <div id='container'>
+
+                        <!--Todos os Filmes de Lançamento-->
+
+                <div id='item'  onclick="Filme();"><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img2.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img3.jpg' /></div>
+                
+                <div id='item'><img src='imgs/img1.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img5.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+
+                
+                <div id='limitador'>Limitador</div>
+    
+            </div>
+                      <!--Botão Direito do Carrossel-->
+            <button type='button' id='btnright'><img src="imgs/btndiret.png"></button>
+    
+        </div>
+                      <!--Carrossel de My List-->
+        <div class="text"><h3>My List</h3></div>
+
+
+        <div id='carrossel2'>
+          
+            <button type='button' id='btnleft2'><img src="imgs/btnesq.png"></button>
+    
+            <div id='container2'>
+    
+                             <!--Todos os Filmes de My List-->
+                <div id='item'><img src='imgs/img3.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img2.jpg' /></div>
+                
+                <div id='item'><img src='imgs/img5.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img1.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                
+                <div id='limitador'>Limitador</div>
+    
+            </div>
+    
+            <button type='button' id='btnright2'><img src="imgs/btndiret.png"></button>
+    
+        </div>
+
+                        <!--Carrossel de Em Alta-->
+           <div class="text2"><h3>Em Alta</h3></div>
+
+
+            <div id='carrossel3'>
+              
+                <button type='button' id='btnleft3'><img src="imgs/btnesq.png"></button>
+        
+                <div id='container3'>
+    
+                        <!--Todos os Filmes de Em Alta-->
+                <div id='item'><img src='imgs/img5.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img3.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img1.jpg' /></div>
+                
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img2.jpg' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+                <div id='item'><img src='imgs/img4.png' /></div>
+    
+        
+                    <div id='limitador'>Limitador</div>
+        
+                </div>
+        
+                <button type='button' id='btnright3'><img src="imgs/btndiret.png"></button>
+        
+            </div>
+            <br><br><br><br><br><br><br><BR><br><br><br>
+
+       
+      </center>
+    </main>
+</body>
+</html>
