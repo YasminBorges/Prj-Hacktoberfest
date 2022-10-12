@@ -1,0 +1,35 @@
+.gallery {
+  --n: 3; /* number of rows*/
+  --m: 4; /* number of columns */
+  --g: 10px;  /* control the gap */
+  --f: 1.2;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(var(--m),auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(100vh*var(--f)/var(--n));
+  height: calc(100vw*var(--f)/var(--m));
+}
+
+
+body {
+  margin: 0;
+  background: #60c4ff;
+}
